@@ -1,10 +1,10 @@
-project_name: crashwatch
+project_name: kubectl-crashwatch
 release:
   github:
     owner: bedirhangull
     name: kubectl-crashwatch
 builds:
-  - id: crashwatch
+  - id: kubectl-crashwatch
     goos:
     - linux
     - windows
@@ -19,9 +19,9 @@ builds:
     ldflags: -s -w
       -X github.com/bedirhangull/kubectl-crashwatch/pkg/version.version=
 archives:
-  - id: crashwatch
+  - id: kubectl-crashwatch
     builds:
-    - crashwatch
+    - kubectl-crashwatch
     name_template: "{{ .ProjectName }}_{{ .Os }}_{{ .Arch }}"
     format_overrides:
     - goos: windows
