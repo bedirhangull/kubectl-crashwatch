@@ -3,7 +3,7 @@ kind: Plugin
 metadata:
   name: crashwatch
 spec:
-  version: "v0.1.0"
+  version: "v1.0.3"
   platforms:
   - selector:
       matchLabels:
