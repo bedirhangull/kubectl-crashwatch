@@ -7,7 +7,7 @@ test:
 
 .PHONY: bin
 bin: fmt vet
-	go build -o bin/{{ .PluginName }} github.com/{{ .Owner }}/{{ .Repo }}/cmd/plugin
+	go build -o bin/crashwatch github.com/bedirhangull/kubectl-crashwatch/cmd/plugin
 
 .PHONY: fmt
 fmt:
@@ -27,3 +27,9 @@ kubernetes-deps:
 .PHONY: setup
 setup:
 	make -C setup
+
+.PHONY: build-and-run
+build-and-run: bin
+	@echo "Moving binary to bin directory and running plugin..."
+	@mv bin/crashwatch /usr/local/bin/kubectl-crashwatch
+	@kubectl-crashwatch
