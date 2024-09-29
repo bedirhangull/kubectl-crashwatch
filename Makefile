@@ -27,3 +27,9 @@ kubernetes-deps:
 .PHONY: setup
 setup:
 	make -C setup
+
+.PHONY: build-and-run
+build-and-run: bin
+	@echo "Moving binary to bin directory and running plugin..."
+	@mv bin/crashwatch /usr/local/bin/kubectl-crashwatch
+	@kubectl-crashwatch

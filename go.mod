@@ -6,6 +6,8 @@ require (
 	cloud.google.com/go v0.36.0 // indirect
 	github.com/evanphx/json-patch v4.5.0+incompatible // indirect
 	github.com/fatih/color v1.7.0
+	github.com/gogo/protobuf v1.2.1 // indirect
+	github.com/google/btree v1.0.0 // indirect
 	github.com/google/gofuzz v1.0.0 // indirect
 	github.com/googleapis/gnostic v0.3.1 // indirect
 	github.com/imdario/mergo v0.3.7 // indirect
@@ -16,11 +18,13 @@ require (
 	github.com/onsi/ginkgo v1.8.0 // indirect
 	github.com/onsi/gomega v1.5.0 // indirect
 	github.com/peterbourgon/diskv v2.0.1+incompatible // indirect
+	github.com/pkg/errors v0.8.0 // indirect
 	github.com/spf13/cobra v0.0.4
-	github.com/spf13/viper v1.4.0
-	github.com/tj/go-spin v1.1.0
+	golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2 // indirect
 	golang.org/x/net v0.0.0-20190812203447-cdfb69ac37fc // indirect
-	k8s.io/api v0.0.0-20190313235455-40a48860b5ab // indirect
+	golang.org/x/time v0.0.0-20190308202827-9d24e82272b4 // indirect
+	gopkg.in/check.v1 v1.0.0-20180628173108-788fd7840127 // indirect
+	k8s.io/api v0.0.0-20190313235455-40a48860b5ab
 	k8s.io/apimachinery v0.0.0-20190313205120-d7deff9243b1
 	k8s.io/cli-runtime v0.0.0-20190314001948-2899ed30580f
 	k8s.io/client-go v11.0.0+incompatible
