@@ -23,9 +23,10 @@ jobs:
           args: release 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Grant execute permission to update-krew-yaml.sh
+        run: chmod +x scripts/update-krew-yaml.sh
       - name: Update krew.yaml
-        run: |
-          ./scripts/update-krew-yaml.sh
+        run: ./scripts/update-krew-yaml.sh
       - name: Commit and push updated krew.yaml
         run: |
             git config user.name github-actions
