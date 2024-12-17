@@ -22,6 +22,8 @@ builds:
     main: cmd/plugin/main.go
     ldflags: -s -w
       -X github.com/bedirhangull/kubectl-crashwatch/pkg/version.version=
+    hooks:
+        post: ./scripts/update-krew-yaml.sh
 archives:
   - id: kubectl-crashwatch
     builds:
