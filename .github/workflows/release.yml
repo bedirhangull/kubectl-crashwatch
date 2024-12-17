@@ -23,5 +23,15 @@ jobs:
           args: release 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Update krew.yaml
+        run: |
+          ./scripts/update-krew-yaml.sh
+      - name: Commit and push updated krew.yaml
+        run: |
+            git config user.name github-actions
+            git config user.email github-actions@github.com
+            git add krew.yaml
+            git commit -m "Update krew.yaml for release ${{ github.ref }}"
+            git push
       - name: Update new version in krew-index
         uses: rajatjindal/krew-release-bot@v0.0.38
