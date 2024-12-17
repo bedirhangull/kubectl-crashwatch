@@ -10,7 +10,7 @@ spec:
         os: linux
         arch: amd64
     uri: https://github.com/bedirhangull/kubectl-crashwatch/releases/download/v1.1.0/kubectl-crashwatch_linux_amd64.tar.gz
-    sha256: "8645becc48d2d7b5ded96d4f2c5abd1418d9b8fbd53202e3e0a7b2480e718f06"
+    sha256: "09219f65702fc111df74b5e8069edeb21f0a1518e156fb90c8da089d8d706f2f"
     files:
     - from: "kubectl-crashwatch"
       to: "."
@@ -22,7 +22,7 @@ spec:
         os: linux
         arch: "386"
     uri: https://github.com/bedirhangull/kubectl-crashwatch/releases/download/v1.1.0/kubectl-crashwatch_linux_386.tar.gz
-    sha256: "c3c88ef4cddc39d0169f58cdf0b8d1081c4dd7c959f2d8d62d7a822113ab6a3d"
+    sha256: "c370736ccf17da8819a6d48f26607dea55f3b5e3d9541c9bbf265ed937644f1d"
     files:
     - from: "kubectl-crashwatch"
       to: "."
@@ -34,7 +34,7 @@ spec:
         os: linux
         arch: arm64
     uri: https://github.com/bedirhangull/kubectl-crashwatch/releases/download/v1.1.0/kubectl-crashwatch_linux_arm64.tar.gz
-    sha256: "ba03c00ed6975e2c4fc8089d4c37d41159175c5e68c36eff86ef72b6366523df"
+    sha256: "1e8a38b1d42662629762b4a2ef046c143b06bacfc019e703ace35bd4c3021c5a"
     files:
     - from: "kubectl-crashwatch"
       to: "."
@@ -46,7 +46,7 @@ spec:
         os: darwin
         arch: amd64
     uri: https://github.com/bedirhangull/kubectl-crashwatch/releases/download/v1.1.0/kubectl-crashwatch_darwin_amd64.tar.gz
-    sha256: "f5f15fe13a8758a3dc0dda13d59a3c7f8ab02bb3f159d51f901913dab487fe88"
+    sha256: "7a43473777037f9617ef0c345453421832aaf38b44d8c5f47921e813f2274f81"
     files:
     - from: "kubectl-crashwatch"
       to: "."
@@ -58,7 +58,7 @@ spec:
         os: darwin
         arch: arm64
     uri: https://github.com/bedirhangull/kubectl-crashwatch/releases/download/v1.1.0/kubectl-crashwatch_darwin_arm64.tar.gz
-    sha256: "94ecc4aef2e4dcbd4bd2c5f0e7fbcf332767ea1af0a9e0cd6415e9f9ca3925ba"
+    sha256: "49cb3725df816ee8322b43725bc903b985396e44503d07fcabccb8af04685479"
     files:
     - from: "kubectl-crashwatch"
       to: "."
@@ -70,7 +70,7 @@ spec:
         os: windows
         arch: amd64
     uri: https://github.com/bedirhangull/kubectl-crashwatch/releases/download/v1.1.0/kubectl-crashwatch_windows_amd64.zip
-    sha256: "93c3a76eff1483b179ab1b4f522f83f63f66c5aaa51cb4a1db79b8b518924c47"
+    sha256: "c31ca7b5898fa3c2bbd04d8e9944fc46f0c234b01805000fcd6973d3710db0f9"
     files:
     - from: "kubectl-crashwatch.exe"
       to: "."
@@ -82,7 +82,7 @@ spec:
         os: windows
         arch: "386"
     uri: https://github.com/bedirhangull/kubectl-crashwatch/releases/download/v1.1.0/kubectl-crashwatch_windows_386.zip
-    sha256: "3b11f59d0675359d0c2713b18dcf600ff7595f05f1f527cb6856e4db64dcf677"
+    sha256: "473babccb1a1ef4d46a4c6b44aef0952454b3acdaba5f020006ccafcd665475f"
     files:
     - from: "kubectl-crashwatch.exe"
       to: "."
