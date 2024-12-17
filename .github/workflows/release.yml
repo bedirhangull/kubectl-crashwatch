@@ -12,41 +12,16 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@master
-        with:
-          fetch-depth: 0
-
       - name: Setup Go
         uses: actions/setup-go@v1
         with:
-          go-version: '1.20'
-
-      - name: Ensure script is executable
-        run: |
-          chmod +x scripts/update-krew-yaml.sh
-          ls -l scripts/update-krew-yaml.sh
-
+          go-version: 1.20
       - name: GoReleaser
-        uses: goreleaser/goreleaser-action@v4
+        uses: goreleaser/goreleaser-action@v1
         with:
-          distribution: goreleaser
           version: latest
-          args: release --clean
+          args: release 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Run update script
-        run: |
-          pwd
-          ls -l scripts/
-          ./scripts/update-krew-yaml.sh
-
-      - name: Commit and push updated Krew manifest
-        run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add deploy/krew/plugin.yaml
-          git commit -m "Update Krew manifest for release ${GITHUB_REF#refs/tags/}"
-          git push
-
       - name: Update new version in krew-index
         uses: rajatjindal/krew-release-bot@v0.0.38
